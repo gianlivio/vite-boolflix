@@ -15,22 +15,27 @@ export default {
 </script>
 
 <template>
-    <header>
+   <header>
+    <h1>BOOLFLIX</h1>
+    <div>
       <input v-model="searchText" placeholder="Cerca un film o una serie TV..." />
       <button @click="search">Cerca</button>
-    </header>
+    </div>
+  </header>
   </template>
   
  
   
   <style scoped lang="scss">
   @import '../style/partials/variables';
-@import '../style/partials/mixin';
+  @import '../style/partials/mixin';
 
 header {
   @include flex-center;
-  gap: 10px;
-  margin: 20px 0;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: $primary-color;
+  color: white;
 }
 
 input {
@@ -41,7 +46,6 @@ input {
 }
 
 button {
-  @include flex-center;
   padding: 10px 20px;
   background-color: $secondary-color;
   border: none;
