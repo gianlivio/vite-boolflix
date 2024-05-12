@@ -1,0 +1,7 @@
+// Mixin per il centraggio di un elemento
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
